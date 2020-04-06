@@ -1,15 +1,38 @@
 main {
-  height: 500px;
-  width: 500px;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
 }
 
 div {
-  display: inline-block;
-  width: 33%;
-  height: 33%;
+    display: inline-block;
+    width: 33%;
+    height: 33%;
 }
 
-div.color {
-  width: 50%;
-  transition: width 2s;
+
+/* Functionaliteit 3 */
+div.four {
+    transition: width 2s, height 2s;
+}
+
+.four:hover {
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+
+/* Functionaliteit 5 */
+@keyframes animationFunction5 {
+    from {
+        background-color: gold
+    }
+    to {
+        background-color: green
+    }
+}
+
+.six {
+    transition: 3s all;
 }
