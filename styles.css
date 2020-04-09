@@ -1,15 +1,37 @@
 main {
-  height: 500px;
-  width: 500px;
+    height: 500px;
+    width: 500px;
 }
 
 div {
-  display: inline-block;
-  width: 33%;
-  height: 33%;
+    display: inline-block;
+    width: 33%;
+    height: 33%;
+    color: white;
+    text-align: center;;
+    font-weight: bolder;
 }
 
 div.color {
-  width: 50%;
-  transition: width 2s;
+    width: 50%;
+    transition: width 2s;
+}
+.do {
+    height: 33%;
+    width: 33%;
+    background: red;
+    box-shadow: red 0 0 5px 1px;
+    transition: all 500ms ease;
+    transition-property: height, width, box-shadow;
+}
+
+.do:hover {
+  height: 66%;
+  width: 66%;
+  box-shadow: blue 0 0 10px 3px;
+  background: blue;
+}
+@keyframes byebye {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
