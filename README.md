@@ -2,9 +2,9 @@
 Eindopracht | Versie 1.0
 
 ## Folderstructuur
-Index.html - Entry point
-Index.js - Functions
-Style.css - Styling
+Index.html - Entry point \n
+Index.js - Functions \n
+Style.css - Styling \n
 
 ## Handleiding
 drawBlocks(blocks,rotation) - tekent alle divs(blokken)
