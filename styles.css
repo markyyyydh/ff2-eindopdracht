@@ -1,15 +1,67 @@
 main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 500px;
   width: 500px;
+  transition: ease 4s transform;
 }
 
 div {
   display: inline-block;
   width: 33%;
   height: 33%;
+  transition: ease 0.5s all;
+  margin: 0;
 }
 
 div.color {
   width: 50%;
   transition: width 2s;
+}
+
+.hoverable:hover {
+  height: 50%;
+  width: 50%;
+}
+
+.styleChange {
+  transform: rotate(45deg);
+}
+
+.addSpace > div {
+  width: calc(33% - 20px);
+  height: calc(33% - 20px);
+  margin: 10px;
+}
+
+.capsize {
+  transform: rotate(90deg);
+}
+
+.animate {
+  animation-name: meetNeighbors;
+  animation-duration: 4s;
+}
+
+@keyframes meetNeighbors {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  20% {
+    transform: translate(-100%, -100%);
+  }
+  40%  {
+    transform: translate(100%, -100%);
+  }
+  60%  {
+    transform: translate(100%, 100%);
+  }
+  80%  {
+    transform: translate(-100%, 100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
 }
