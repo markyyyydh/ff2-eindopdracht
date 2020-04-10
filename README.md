@@ -2,19 +2,19 @@
 Eindopracht | Versie 1.0
 
 ## Folderstructuur
-Index.html - Entry point \n
-Index.js - Functions \n
-Style.css - Styling \n
+Index.html - Entry point<br/>
+Index.js - Functions<br/>
+Style.css - Styling
 
 ## Handleiding
-drawBlocks(blocks,rotation) - tekent alle divs(blokken)
-randomDivColor(owner) - zet een willekeurige kleur op een willekeurige div
-setMargin() - zet de margin van alle blokken op 10px
-animation() - zet een animatie op een willekeurige div
-reloadWebpage() - herlaad de webpagina
-openYoutube() - opent youtube
-secondsColors(owner) - zet de div waar op geklikt is een animatie waarbij de kleur elke seconde anders wordt
-rotateBox(rotation) - draait de hele blokkendoos
-execute(owner,rotation) - executeert een van de functies boven in willekeurige volgorde
+drawBlocks(blocks,rotation) - tekent alle divs(blokken)<br/>
+randomDivColor(owner) - zet een willekeurige kleur op een willekeurige div<br/>
+setMargin() - zet de margin van alle blokken op 10px<br/>
+animation() - zet een animatie op een willekeurige div<br/>
+reloadWebpage() - herlaad de webpagina<br/>
+openYoutube() - opent youtube<br/>
+secondsColors(owner) - zet de div waar op geklikt is een animatie waarbij de kleur elke seconde anders wordt<br/>
+rotateBox(rotation) - draait de hele blokkendoos<br/>
+execute(owner,rotation) - executeert een van de functies boven in willekeurige volgorde<br/>
 
 ## FIN
