@@ -1,0 +1,21 @@
+html body {
+    font-family: arial;
+    padding: 20px;
+    margin: 0px;
+}
+
+.box {
+    transition: 1s ease;
+    display: inline-block;
+    position: absolute;
+}
+
+.blocks:hover {
+    transform: scale(1.2)!important;
+}
+
+@keyframes animation {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
