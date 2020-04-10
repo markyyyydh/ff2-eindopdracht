@@ -36,7 +36,7 @@ const items = [
   },
   {
     class: "eight",
-    onClick: `refreshWebPage()`,
+    onClick: `refreshPage()`,
     color: "purple"
   },
   {
@@ -48,7 +48,6 @@ const items = [
 const mainHtml = items.reduce(mkHtmlStr, '');
 
 
-// Function 1
 function setRandomStyles(query) {
   let querySelector = document.querySelector(`${query}`);
 
@@ -63,7 +62,6 @@ function setRandomStyles(query) {
 }
 
 
-// Function 2
 function setMarginAll() {
   let querySelector = document.querySelectorAll('div');
 
@@ -77,7 +75,6 @@ function setMarginAll() {
 }
 
 
-// Function 4
 function setBGColor(query) {
   let bgColor = document.querySelector(`${query}`);
 
@@ -90,7 +87,11 @@ function setBGColor(query) {
   }
 }
 
-// Function 5
+function goToPage() {
+  let url = "https://www.youtube.com/watch?v=eEhcCwF1nns";
+  window.open(url, "_blank")
+}
+
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
@@ -105,11 +106,14 @@ function changeColor() {
   div.style.backgroundColor = getRandomColor();
 }
 
+function refreshPage() {
+  window.location.reload();
+}
+
 function changeColorEverySecond() {
   setInterval(changeColor, 1000);
 }
 
-// Function 6
 function Animation(query) {
   let querySelector = document.querySelector(`${query}`);
 
@@ -118,7 +122,6 @@ function Animation(query) {
 }
 
 
-// Function 7
 function rotateDiv(query) {
   let querySelector = document.querySelector(`${query}`);
 
@@ -129,19 +132,6 @@ function rotateDiv(query) {
   }
 
 }
-
-
-// Function 8
-function refreshWebPage() {
-  window.location.reload();
-}
-
-// Function 9
-function goToPage() {
-  let url = "https://www.youtube.com/watch?v=eEhcCwF1nns";
-  window.open(url, "_blank")
-}
-
 
 function mkHtmlStr(htmlStr, item) {
   const stringToAppend = `<div onclick="${item.onClick}"
