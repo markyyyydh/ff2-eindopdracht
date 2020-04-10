@@ -9,7 +9,29 @@ div {
   height: 33%;
 }
 
-div.color {
+
+/* Function 3 */
+div.seven {
+  transition: width 2s, height 2s;
+}
+
+.seven:hover {
+  display: flex;
   width: 50%;
-  transition: width 2s;
+  height: 50%;
+}
+
+
+/* Function 5 */
+@keyframes animationFunction5 {
+  from {
+      background-color: gold
+  }
+  to {
+      background-color: green
+  }
+}
+
+.five {
+  transition: 3s all;
 }
