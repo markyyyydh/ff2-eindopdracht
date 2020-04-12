@@ -1,0 +1,30 @@
+main {
+    height: 500px;
+    width: 500px;
+}
+
+div {
+    display: inline-block;
+    width: 33%;
+    height: 33%;
+    color: white;
+    text-align: center;;
+    font-weight: bolder;
+}
+
+div.color {
+    width: 50%;
+    transition: width 2s;
+}
+.three {
+    height : 33%;
+    width : 33%;
+    background: red;
+    transition: 1000ms ease-in-out;
+}
+
+.three:hover {
+  transform: scale(1.5);
+  background: blue;
+}
+
