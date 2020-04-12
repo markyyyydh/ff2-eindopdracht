@@ -1,15 +1,36 @@
-main {
-  height: 500px;
-  width: 500px;
+/* Block container which contains all the blocks (duh) */
+#blocksContainer {
+  width: 300px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 100px);
 }
 
-div {
-  display: inline-block;
-  width: 33%;
-  height: 33%;
+.block {
+  height: 100px;
+  width: 100px;
 }
 
-div.color {
-  width: 50%;
-  transition: width 2s;
+/* Used for block 2 */
+.colorTransition {
+  transition: background-color 2s;
+}
+
+/* Used for block 5 */
+.slightlyRotated {
+  transform: rotate(45deg);
+  transition: transform 2s;
+}
+
+/* Used for block 8 */
+.fullyRotated {
+  transform: rotate(360deg);
+  transition: transform 5s;
+}
+
+/* Used for block 9 */
+.growingBlock {
+  height: 15rem;
+  width: 15rem;
+  transition: width 5s, height 5s;
 }
