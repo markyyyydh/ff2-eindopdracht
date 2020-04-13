@@ -1,0 +1,41 @@
+main {
+  height: 500px;
+  width: 500px;
+  opacity: 1;
+  margin: 0px;
+  transition: 2s;
+}
+
+
+
+div {
+  display: inline-block;
+  width: 33%;
+  height: 33%;
+  margin: 0px;
+}
+
+.margin{
+  margin: 10px;
+  transition: all 500ms;
+}
+
+div.color{
+  background-color:black;
+}
+
+.four{
+  transition: all 500ms;
+}
+
+.four:hover{
+  transition: all 500ms;
+  height: 50%;
+  width: 50%;
+}
+
+@keyframes color{
+  from {background-color: black;}
+  to {background-color: white;}
+}
+
